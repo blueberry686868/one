@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>µÚÎå´Î×÷Òµ</title>
+	<link rel="stylesheet" href="css/style5.css">
+<style type="text/css">
+</style>
+</head>
+<body>
+	<li>
+	   		 <a href="images/1.jpg" title="º«·Ç" >
+	   		 	 <img class="img1"  src="images/1.jpg" alt="º«·Ç">
+	   		 </a>
+	   		
+	  	</li>
+	 	 <li>
+	    		<a href="images/2.jpg" title="ÑæÁé¼§" >
+	    		<img class="img1"  src="images/2.jpg" alt="ÑæÁé¼§">
+	    		</a>
+	  	</li>
+	  	<li>
+	    		<a href="images/3.jpg" title="°×Óð" >
+			<img class="img1"  src="images/3.jpg" alt="°×Óð">
+	    		</a>
+	  	</li>
+	  	<li>
+	    		<a href="images/4.jpg" title="ÎÀ×¯">
+			<img class="img1"  src="images/4.jpg" alt="ÎÀ×¯">
+	    		</a>
+	  	</li>
+	</ul>
+	<img id="placeholder" style="width:500px;height=:400px;margin-left:300px;;margin-top:100px;" src="images/5.jpg" alt="my image gallery"/>
+		<script >
+		function showPic(whichPic){
+				var a=whichPic.getAttribute("href");
+				var b=document.getElementById("placeholder");
+				b.setAttribute("src",a);
+			}
+		function pre(){
+			var links=document.getElementsByTagName("a");
+			for(var i=0;i<links.length;i++){
+				links[i].onclick=function(){
+					showPic(this);
+					return false;
+
+					}
+					
+				}
+			}
+			pre();
+		</script>
+			
+</body>
+</html>

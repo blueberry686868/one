@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>第二次作业</title>
+</head>
+<body>
+	<h1>秦时明月</h1>
+	<ul id="imagegallery">
+	  	<li>
+	   		 <a href="images/1.jpg" title="韩非" onClick="showPic(this);return false;">韩非</a>
+	  	</li>
+	 	 <li>
+	    		<a href="images/2.jpg" title="焰灵姬" onClick="showPic(this);return false;">焰灵姬</a>
+	  	</li>
+	  	<li>
+	    		<a href="images/3.jpg" title="白羽" onClick="showPic(this);return false;">白羽</a>
+	  	</li>
+	  	<li>
+	    		<a href="images/4.jpg" title="卫庄" onClick="showPic(this);return false;">卫庄</a>
+	  	</li>
+	</ul>
+		<img id="placeholder" src="images/5.jpg" alt="my image gallery"/>
+		<script>
+			function showPic(whichPic){
+				var a=whichPic.getAttribute("href");
+				var b=document.getElementById("placeholder");
+				b.setAttribute("src",a);
+			}
+		</script>
+</body>
+</html>
